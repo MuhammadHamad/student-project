@@ -192,7 +192,7 @@ a:hover {
   .page3 {
     padding: 14px;
     line-height: 1.6;
-    padding-bottom: 400px;
+    padding-bottom: 300px;
   }
 
   .page3 h2 {
@@ -200,16 +200,15 @@ a:hover {
     font-size: 22px;
     padding: 20px 0;
   }
-  
+
   .page3 p {
     font-size: 15px;
     height: 200px;
   }
 }
 
-
 .teamcontainer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -256,15 +255,15 @@ a:hover {
 
 @media (max-width: 480px) {
   .team .card {
-    margin-top: 100px;
-
+    margin-bottom: 100px;
   }
 }
 
-.container {
-  height: 100vh;
-  padding-top: 200px;
+.contact-container {
+  padding: 200px;
   background-image: url(/images/ohbjT0Ezru4k5sQTF8ZnKd-3VPYFcYBl-q6O66x7VMs=_plaintext_638227833777654148.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 form {
@@ -273,9 +272,10 @@ form {
   margin: auto;
   padding: 25px;
   box-shadow: 2px 2px 30px rgb(0, 0, 0);
-  color: aliceblue;
   background-image: url("/images/wall.jpg");
 }
+
+
 
 form p {
   text-align: center;
@@ -297,6 +297,20 @@ input {
   width: 100%;
   padding: 15px 0;
   margin-bottom: 20px;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0;
+  }
+  form {
+    width: 280px;
+    box-shadow: none;
+  }
+  input {
+    padding: 8px 0;
+  }
 }
 
 footer {
@@ -319,6 +333,5 @@ footer {
 
 @media (max-width: 480px) {
   .footer_container img {
-
   }
 }
