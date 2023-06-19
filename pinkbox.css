@@ -332,6 +332,12 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .footer_container {
+    padding: 20px 0;
+    width: auto;
+  }
+
   .footer_container img {
+    height: 25px;
   }
 }
