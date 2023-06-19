@@ -170,6 +170,7 @@ a:hover {
 }
 
 .page3 {
+  height: auto;
   background-color: black;
   color: aliceblue;
   font-size: 20px;
@@ -187,23 +188,44 @@ a:hover {
   line-height: 30px;
 }
 
+@media (max-width: 480px) {
+  .page3 {
+    padding: 14px;
+    line-height: 1.6;
+    padding-bottom: 400px;
+  }
+
+  .page3 h2 {
+    text-align: center;
+    font-size: 22px;
+    padding: 20px 0;
+  }
+  
+  .page3 p {
+    font-size: 15px;
+    height: 200px;
+  }
+}
+
+
+.teamcontainer {
+  background-color: black;
+  color: white;
+}
+
 .team {
-  width: 1100px;
-  height: 400px;
-  margin: 20px auto;
+  height: auto;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .ourteam {
   text-transform: uppercase;
   text-align: center;
   font-size: 32px;
-}
-
-.teamcontainer {
-  padding: 50px 0;
-  height: 70vh;
 }
 
 .team .card {
@@ -232,10 +254,17 @@ a:hover {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
+  .team .card {
+    margin-top: 100px;
+
+  }
+}
+
 .container {
   height: 100vh;
   padding-top: 200px;
-  background-image: url(/images/main.jpg);
+  background-image: url(/images/ohbjT0Ezru4k5sQTF8ZnKd-3VPYFcYBl-q6O66x7VMs=_plaintext_638227833777654148.jpg);
 }
 
 form {
@@ -272,8 +301,6 @@ input {
 
 footer {
   width: 100%;
-  box-shadow: 2px 2px 10px rgb(255, 255, 255);
-  background-color: aliceblue;
 }
 
 .footer_container {
@@ -287,5 +314,11 @@ footer {
 
 .footer_container img {
   margin-left: 20px;
-   height: 40px;
+  height: 40px;
+}
+
+@media (max-width: 480px) {
+  .footer_container img {
+
+  }
 }
